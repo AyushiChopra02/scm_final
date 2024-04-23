@@ -135,5 +135,29 @@ body
 {
     background:rgb(205, 15, 235);
     box-shadow: none;
-
 }
+.footer {
+    color: #fff;
+    text-align: center;
+  }
+
+  .icon{
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  .icon a {
+    display: inline-block;
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color:beige;
+    color:chocolate;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+  }
+
+
