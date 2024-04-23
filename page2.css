@@ -102,7 +102,8 @@ body
 {
     display:inline-block;
     font-size: 30px;
-    color:brown;
+    color:rgb(52, 1, 33);
+    text-shadow: 2px 2px 5px rgb(237, 63, 144);
     font-weight:500px;
     margin:4px 0;
     
