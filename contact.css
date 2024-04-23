@@ -1,0 +1,118 @@
+body{
+    background-color:#94bbe9;
+    background-image: url(pexels-cottonbro-studio-3942924.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+.card{
+width:310px;
+height:450px;
+background-color:aliceblue;
+text-align:center;
+border-radius:10px;
+margin-inline:50px;
+margin-top: 40px;
+}
+.img-div img{
+width: 150px;
+height:100px;
+border-radius:46%;
+margin-top:20px;
+}
+.img-div{
+background-color:gainsboro;
+height:120px;
+
+}
+.card p{
+font-size:20px;
+font-weight:italic;
+color: black;
+}
+.icon{
+font-size:40px;
+margin:20px;
+}
+.icon i{
+margin-inline:10px;
+}
+.icon span{
+color:rgba(0,119,255);
+
+}
+.icon .insta{
+color:rgb(255,0,162);
+}
+.icon .mail{
+color:rgb(199, 8, 18);
+}
+.container{
+display: flex;
+justify-content: center;
+margin-top: 100px;
+}
+.icon button{
+font-style:1rem;
+border:none;
+outline:none;
+padding: 10px 12px;
+}
+
+.fa-brands{
+color: rgb(112, 62, 112);;
+}
+.fa-regular{
+color: rgb(112, 62, 112);;
+}
+.logo{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.logo:hover
+{
+    font-size:40px;
+    color:rgb(182, 0, 97);
+    font-weight:700px;
+    
+}
+
+.navbar a
+{
+    text-shadow: 1px 1px rgb(132, 13, 236);
+font-size:20px;
+color:rgb(244, 244, 249);
+text-decoration: none;
+font-weight:500px;
+margin-left:35px;
+transition:.3s;
+word-spacing: 15px;
+color:rgb(182, 0, 97);
+    font-weight: 600px;
+    font-size:25px;
+}
+.navbar a:hover
+{
+    color:#ba89cf;
+    
+
+}
+.header
+{
+position:fixed;
+top:0;
+left:0px;
+width:100%;
+padding:15px 50px;
+background:#ed9bbf;
+
+display:flex;
+font-size:30px;
+color:rgb(255, 255, 255);
+text-decoration: none;
+font-weight: bolder;
+transition:.5s;
+
+}
