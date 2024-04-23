@@ -7,7 +7,7 @@
   body
   {
     color:rgb(255, 255, 254);
-    background-color: rgb(8, 5, 5); 
+    background-color: rgb(132, 13, 236);  
   
   }
   .header
@@ -79,7 +79,7 @@
     height:470px;
     padding: 20px;
     margin-top:30px;
-    background-color: #070101;
+    background-color:white;
     box-shadow: 0 2px 4px rgba(72, 200, 36, 0.1);
     border-radius: 20px;
     margin-top: 15%;
@@ -95,20 +95,20 @@
   h1 {
     text-align:left;
     font-size:xx-large;
-    border-bottom: 6px cyan double;
-    border-top:6px cyan double;
-    border-left: 6px cyan double;
-    border-right:6px cyan double;
+    border-bottom: 6px rgb(60, 1, 40);
+    border-top:6px rgb(60, 1, 40);
+    border-left: 6px rgb(60, 1, 40);
+    border-right:6px rgb(60, 1, 40);
     margin-top: 10px;
     margin-bottom:20px;
   }
   
   
-  
+ 
   .question {
     font-weight:bolder;
     font-size:larger;
-   color:cyan;
+   color:rgb(60, 1, 40);
    margin-top:10px;
    margin-bottom:30px;
    font-size-adjust:none;
@@ -118,7 +118,7 @@
   }
   .question:hover
   {
-    color:cyan;
+    color:rgb(45, 5, 154);
     font-size:160%
   }
   .options {
