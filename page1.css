@@ -118,7 +118,6 @@ body
 {
     width:280px;
     height:70px;
-    background-color: rgb(229, 62, 151);
     border:2px double #fff;
     outline-style: none;
     border-radius: 6px;
@@ -133,7 +132,7 @@ body
 }
 .home-content .start-btn:hover
 {
-    background:rgb(205, 15, 235);
+    background:bisque;
     box-shadow: none;
 }
 .footer {
