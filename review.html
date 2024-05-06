@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" />
+    <style>
+        /* Rest of your styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #94bbe9 ;
+            margin: 0;
+            
+        }
+
+        .navbar {
+            background-color: #db4083;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+        }
+
+        .navbar .navbar-left {
+            margin-right: auto;
+        }
+
+        .navbar-icons a {
+            color: #fff;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        .navbar-icons .button {
+            background-color: #888;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .review-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color:azure;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .review-container h1 {
+            margin-top: 0;
+        }
+
+        .rating-review {
+            margin-bottom: 15px;
+        }
+
+        .rating-review label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .rating-review textarea,
+        .rating-review input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .reviews {
+            margin-top: 20px ;
+        }
+
+        .reviews h2 {
+            margin-top: 0;
+        }
+
+        .reviews ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .reviews li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+	.submit{
+         font-size:15px;
+
+	}
+	.submit:hover{
+	background-color:#e3c5d2;
+	}
+
+    </style>
+</head>
+
+<body>
+    <header class="header" data-header>
+    <!-- Navigation -->
+    <!-- <nav class="navbar">
+        <div class="navbar-left">
+            <span class="greeting" id="greeting"></span>
+        </div>
+        <div class="navbar-icons">
+            <a href="auth.html" class="user-btn"><i class="fas fa-user"></i> </a>
+            <a href="index.html" class="home-btn"><i class="fas fa-home"></i></a>
+            <a href="review.html" class="review-btn"><i class="fas fa-star"></i></a>
+            <button id="themeToggleBtn" class="button"><i class="fas fa-lightbulb"></i></button>
+        </div>
+    </nav> -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+  
+          <li>
+            <a href="page1.html" class="navbar-link title-small has-state active">Home</a>
+          </li>
+  
+          <li>
+            <a href="contact.html" class="navbar-link title-small has-state">Contact</a>
+          </li>
+          <!-- <li>
+            <a href="./review.html" class="navbar-link title-small has-state">Reviews</a>
+          </li>      -->
+          <!-- <li>
+            <a href="./auth.html" class="navbar-link title-small has-state">Form</a>
+          </li> -->
+          
+  
+        </ul>
+      </nav>
+  
+
+    <div class="review-container">
+        <h1>Leave a Review</h1>
+        <form id="reviewForm" action="https://formsubmit.co/ayushichopra.02@gmail.com" method="POST">
+            <div class="rating-review">
+                <label for="Name">UserName:</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="rating-review">
+                <label for="Email">Email:</label>
+                <input type="email" name="email" required>
+            </div>
+            
+            <div class="rating-review">
+                <label for="rating">Your Rating:</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+            </div>
+            <div class="rating-review">
+                <label for="review">Your Review:</label>
+                <textarea id="userReview" name="userReview" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="thanks.html">
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            fetch(event.target.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+               
+                if (response.ok) {
+                    window.location.replace('thanks.html');
+                } else {
+                    alert('There was a problem submitting your review. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem submitting your review. Please try again.');
+            });
+        });
+    </script>
+</body>
+
+</html>

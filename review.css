@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #94bbe9;
+    margin: 0;
+    padding: 0;
+}
+
+.review-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #94bbe9;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.review-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rating-review {
+    margin-top: 20px;
+}
+
+.rating-review label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rating-review input,
+.rating-review textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* .header { padding-inline: 32px; } */
+/* .navbar,
+.header .btn-primary,
+.navbar-list { display: flex; }
+
+.navbar { margin-inline-start: auto; }
+
+.navbar-link {
+  position: relative;
+  height: var(--header-height);
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  align-items: center;
+  padding-inline: 24px;
+  opacity: 0.9;
+}
+
+.navbar-link.active { opacity: 1; }
+
+.navbar-link.active::before {
+  content: "";
+  order: 1;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: var(--radius-pill) var(--radius-pill) 0 0;
+} */
+.navbar {
+    display: flex;
+    justify-content: center; 
+    /* Center items horizontally */
+    font-size:20px;
+    color:rgb(244,244,249);
+    font-weight:500px;
+
+  }
+  
+  .navbar-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar-list li {
+    display: inline-block; /* Ensure list items are displayed horizontally */
+    margin-right: 30px; /* Add spacing between items */
+  }
+  
+  .navbar-link {
+    color: white; /* Set color to white */
+  }
+  
+  
+  
+
+.rating-review textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.rating-review button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.rating-review button:hover {
+    background-color: #0056b3;
+}
