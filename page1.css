@@ -9,7 +9,7 @@ body
     color:rgb(255, 255, 254);
     background-color: red; 
     background-image: linear-gradient(to right, rgb(65, 5, 26), rgb(215, 17, 126), rgb(0, 174, 255), rgb(10, 10, 229), rgb(9, 2, 56), indigo, violet);
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201009/pngtree-science-or-technology-background-with-dynamic-particles-trendy-colorful-design-template-image_406781.jpg);
+    background-image : url(https://png.pngtree.com/thumb_back/fh260/background/20201009/pngtree-science-or-technology-background-with-dynamic-particles-trendy-colorful-design-template-image_406781.jpg);
 }
 .header
 {
