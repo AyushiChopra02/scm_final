@@ -1,55 +1,73 @@
 const quizData = [
     {
-      question: 'What does CSS stand for?',
-      options: ['Colorful Style Sheets','Creative Style Sheets','Cascading Style Sheets','Computer Style Sheets'],
-      answer:'Cascading Style Sheets' ,
+      question: 'Javascript is which type oflanguage?',
+      options: ['object oriented','object based','procedural','none of these'],
+      answer: 'object oriented',
     },
     {
-      question: 'Where in an HTML document is the correct place to refer to an external style sheet?',
-      options: ['At the end of document','In head section','In body section','In title'],
-      answer:'In head section',
+      question: 'Which of the following keywords is used to define a variable in Javascript?',
+      options: ['var','let','both var and let','none of these'],
+      answer: 'both var and let',
     },
     {
-      question: 'Which HTML tag is used to define an internal style sheet?',
-      options: ['css','html','style','script'],
-      answer:'style' ,
+  
+          question: 'Upon encountering empty statements, what does the Javascript Interpreter do?',
+      options: ['throws an error', 'ignores the statement', 'gives warning', 'none of these'],
+      answer: 'ignores the statement',
     },
     {
-      question: 'Which CSS property is used to change the text color of an element?',
-      options: ['color','textcolor','bgcolor','fgcolor'],
-      answer:'textcolor' ,
+      question: 'How can a datatype be declared to be a constant type?',
+      options: ['const', 'var', 'let', 'constant'],
+      answer: 'const',
     },
     {
-      question: 'Which CSS property controls the text size?',
-      options: ['fontsize','fontstyle','textsize','textstyle'],
-      answer:'fontsize',
+      question: '  What keyword is used to check whether a given property is valid or not?',
+      options: [
+        'in',
+        'is in',
+        'lies',
+        'exists',
+      ],
+      answer: 'in',
     },
     {
-      question: 'Which property is used to change the left margin of an element?',
-      options: ['margin','marginleft','padding','leftpadding'],
-      answer:'marginleft' ,
+          
+      question: 'Which function is used to serialize an object into a JSON string in Javascript?',
+      options: ['parse', 'convert ', 'stringify', 'none of these'],
+      answer: 'stringify',
     },
     {
-      question: 'What is the default value of the position property?',
-      options: ['relative','static','fixed','absolute'],
-      answer:'static' ,
+      question: 'Which of the following are closures in Javascript?',
+      options: [
+        'variables',
+        'constant',
+        'functions',
+        'all the above',
+      ],
+      answer: 'all the above',
     },
     {
-      question: 'Box-Shadow is a property that allows developers to apply a ?',
-      options: ['border','drop shadow','rounded corner','corner'],
-      answer:'drop shadow',
+      question: ' What keyword is used to declare an asynchronous function in Javascript? ',
+     options: ['async', 'await', 'setTimeout', 'none of the above'],
+      answer: 'async',
     },
     {
-      question: 'Which of the below CSS class is used to change the text color of CSS ?',
-      options: [' background-color','color','color-background','None of the above'],
-      answer:'color' ,
+      question: 'How to stop an interval timer in Javascript?',
+      options: [
+        'clearInterval',
+        'clearTimer',
+        'intervalOver',
+        'None of the above',
+      ],
+      answer: 'clearInterval',
     },
     {
-      question: 'Which element is used to represent the transparency of an element in CSS ?',
-      options: ['Hover','Opacity','Transparent','Overlay'],
-      answer:'Opacity' ,
+      question: ' Which object in Javascript dont have a prototype?',
+      options: ['base object','all have a prototype','none of them have prototyper','none of the above'],
+      answer: 'base object',
     },
-  ]
+  ];
+  
   const quizContainer = document.getElementById('quiz');
   const resultContainer = document.getElementById('result');
   const submitButton = document.getElementById('submit');
@@ -129,7 +147,7 @@ const quizData = [
     submitButton.style.display = 'none';
     retryButton.style.display = 'inline-block';
     showAnswerButton.style.display = 'inline-block';
-    resultContainer.innerHTML = <h1>You scored ${score} out of ${quizData.length}!</h1>;
+    resultContainer.innerHTML = You scored ${score} out of ${quizData.length}!;
   }
   
   function retryQuiz() {
