@@ -9,7 +9,8 @@ body
     color:rgb(255, 255, 254);
     background-color: red; 
     background-image: linear-gradient(to right, rgb(65, 5, 26), rgb(215, 17, 126), rgb(0, 174, 255), rgb(10, 10, 229), rgb(9, 2, 56), indigo, violet);
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201009/pngtree-science-or-technology-background-with-dynamic-particles-trendy-colorful-design-template-image_406781.jpg);
+    background-image: url(https://t4.ftcdn.net/jpg/03/45/88/07/360_F_345880772_zIT2mkdCzTthplO7xqaGGrMspN0jw0ll.jpg);
+    background-size : cover;
 }
 .header
 {
@@ -17,7 +18,7 @@ body
     top:0;
     left:0;
     width:100%;
-    padding:20px 10%;
+    padding:21px 10%;
     background:rgb(0, 0, 0);
    
     display:flex;
@@ -117,7 +118,6 @@ body
 {
     width:280px;
     height:70px;
-    background-color: rgb(229, 62, 151);
     border:2px double #fff;
     outline-style: none;
     border-radius: 6px;
@@ -132,7 +132,7 @@ body
 }
 .home-content .start-btn:hover
 {
-    background:rgb(205, 15, 235);
+    background:bisque;
     box-shadow: none;
 }
 .footer {
