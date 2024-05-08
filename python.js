@@ -1,55 +1,73 @@
 const quizData = [
     {
-      question: 'What does CSS stand for?',
-      options: ['Colorful Style Sheets','Creative Style Sheets','Cascading Style Sheets','Computer Style Sheets'],
-      answer:'Cascading Style Sheets' ,
+      question: 'When was Python Programming Language developed?',
+      options: ['Wick van Rossum','Rasmus Lerdorf','Guido van Rossum','Niene Stom'],
+      answer: 'Guido van Rossum',
     },
     {
-      question: 'Where in an HTML document is the correct place to refer to an external style sheet?',
-      options: ['At the end of document','In head section','In body section','In title'],
-      answer:'In head section',
+      question: 'Is Python case sensitive when dealing with identifiers?',
+      options: ['no','yes','machine dependent','none of these'],
+      answer: 'yes',
     },
     {
-      question: 'Which HTML tag is used to define an internal style sheet?',
-      options: ['css','html','style','script'],
-      answer:'style' ,
+  
+          question: ' All keywords in Python are in?',
+      options: ['Capitalized', 'lower case', 'UPPER CASE', 'none of the above'],
+      answer: 'none of the above',
     },
     {
-      question: 'Which CSS property is used to change the text color of an element?',
-      options: ['color','textcolor','bgcolor','fgcolor'],
-      answer:'textcolor' ,
+      question: 'Which keyword is used for function in Python language?',
+      options: ['Indentation', 'Key', 'Brackets', 'All of the mentioned'],
+      answer: 'Indentation',
     },
     {
-      question: 'Which CSS property controls the text size?',
-      options: ['fontsize','fontstyle','textsize','textstyle'],
-      answer:'fontsize',
+      question: 'Which keyword is used for function in Python language?',
+      options: [
+        'Function',
+        'def',
+        'fun',
+        'define',
+      ],
+      answer: 'def',
     },
     {
-      question: 'Which property is used to change the left margin of an element?',
-      options: ['margin','marginleft','padding','leftpadding'],
-      answer:'marginleft' ,
+          
+      question: 'What does pip stand for python?',
+      options: ['Pip Installs Python', 'Pip Installs Packages', 'Preferred Installer Program', 'All of the mentioned'],
+      answer: 'Preferred Installer Program',
     },
     {
-      question: 'What is the default value of the position property?',
-      options: ['relative','static','fixed','absolute'],
-      answer:'static' ,
+      question: 'Which of the following is not a core data type in Python programming?',
+      options: [
+        'Tuples',
+        ' Lists',
+        'Class',
+        'Dictionary',
+      ],
+      answer: 'Class',
     },
     {
-      question: 'Box-Shadow is a property that allows developers to apply a ?',
-      options: ['border','drop shadow','rounded corner','corner'],
-      answer:'drop shadow',
+      question: 'Which one of the following is not a keyword in Python language? ',
+     options: ['pass', 'eval', 'assert', 'nonlocal'],
+      answer: 'eval',
     },
     {
-      question: 'Which of the below CSS class is used to change the text color of CSS ?',
-      options: [' background-color','color','color-background','None of the above'],
-      answer:'color' ,
+      question: 'What are the two main types of functions in Python?',
+      options: [
+        'System function',
+        'Custom function',
+        'Built-in function & User defined function',
+        'User function',
+      ],
+      answer: 'Built-in function & User defined function',
     },
     {
-      question: 'Which element is used to represent the transparency of an element in CSS ?',
-      options: ['Hover','Opacity','Transparent','Overlay'],
-      answer:'Opacity' ,
+      question: ' Which of these is the definition for packages in Python?',
+      options: [' A set of main modules','A folder of python modules','A number of files containing Python definitions and statements','A set of programs making use of Python modules'],
+      answer: 'A folder of python modules',
     },
-  ]
+  ];
+  
   const quizContainer = document.getElementById('quiz');
   const resultContainer = document.getElementById('result');
   const submitButton = document.getElementById('submit');
@@ -129,7 +147,7 @@ const quizData = [
     submitButton.style.display = 'none';
     retryButton.style.display = 'inline-block';
     showAnswerButton.style.display = 'inline-block';
-    resultContainer.innerHTML = <h1>You scored ${score} out of ${quizData.length}!</h1>;
+    resultContainer.innerHTML = You scored ${score} out of ${quizData.length}!;
   }
   
   function retryQuiz() {

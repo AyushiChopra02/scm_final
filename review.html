@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review page</title>
+
+  <title>Review </title>
     <link rel="stylesheet" href="review.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" />
     <style>
         /* Rest of your styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: black ;
+            background-color: #94bbe9 ;
             margin: 0;
-            padding: 20px;
+            
         }
 
         .navbar {
-            background-color: #333;
-            color: #fff;
+            background-color: #db4083;
+            color: black;
             display: flex;
             justify-content: space-between;
             padding: 10px 20px;
@@ -48,7 +49,7 @@
         .review-container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #fff;
+            background-color:azure;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -94,6 +95,14 @@
             margin-bottom: 5px;
             border-radius: 5px;
         }
+	.submit{
+         font-size:15px;
+
+	}
+	.submit:hover{
+	background-color:#e3c5d2;
+	}
+
     </style>
 </head>
 
@@ -115,11 +124,11 @@
         <ul class="navbar-list">
   
           <li>
-            <a href="./index.html" class="navbar-link title-small has-state active">Home</a>
+            <a href="page1.html" class="navbar-link title-small has-state active">Home</a>
           </li>
   
           <li>
-            <a href="contact.html" class="navbar-link title-small has-state">Connect</a>
+            <a href="contact.html" class="navbar-link title-small has-state">Contact</a>
           </li>
           <!-- <li>
             <a href="./review.html" class="navbar-link title-small has-state">Reviews</a>
@@ -144,6 +153,7 @@
                 <label for="Email">Email:</label>
                 <input type="email" name="email" required>
             </div>
+          main
 	     <div class="rating-review">
                 <label for="recipe-name">sugg:</label>
                 <input type="text" name="recipe-name" required>
@@ -152,6 +162,9 @@
                 <label for="recipe-name">Recipe Name:</label>
                 <input type="text" name="recipe-name" required>
             </div>
+
+            
+
             <div class="rating-review">
                 <label for="rating">Your Rating:</label>
                 <input type="number" id="rating" name="rating" min="1" max="5" required>
@@ -164,10 +177,14 @@
                 <label for="review">Your Review:</label>
                 <textarea id="userReview" name="userReview" required></textarea>
             </div>
+		div class="rating-review">
+                <label for="review">Your Suggetion:</label>
+                <textarea id="userReview" name="userReview" required></textarea>
+            </div>
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="thanks.html">
-            <button type="submit">Submit</button>
+            <button class="submit" type="submit">Submit</button>
         </form>
     </div>
 
